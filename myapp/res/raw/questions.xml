@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<question>
+    <text>Kiss-kiss my baby. Thats my test Android app and I thought I'd try some basic stuff and how to use different
+        tools. Wanna spend some time on simple questions?
+    </text>
+    <answers>
+        <answer>
+            <button>A bit Later :)</button>
+            <text>OK! Kiss :-* Then close this app and message me something nice. :)</text>
+        </answer>
+        <answer>
+            <button>Oui!</button>
+            <text>Good.</text>
+            <question>
+                <text>So what's the time in US now?</text>
+                <answers>
+                    <answer>
+                        <button>Morning</button>
+                        <text>Hmm, so I'm probably in deep sleep... Yaaaaay, so good. I'm dreaming about pink unicorns
+                            and you have to work. :P I'm probably also missing hugging your back, but pink unicorns make
+                            me forget about it. :D
+                        </text>
+                        <question>
+                            <text>Are you missing me hugging your back? (Don't worry, I'm not logging your answers and
+                                not sending it anywhere. So reply honestly!)
+                            </text>
+                            <answers>
+                                <answer>
+                                    <button>Yes</button>
+                                    <text>See? The questions are so easy! And thats why close this app and message me
+                                        something nice. :)
+                                    </text>
+                                </answer>
+                            </answers>
+                        </question>
+                    </answer>
+                    <answer>
+                        <button>Afternoon</button>
+                        <text>Apre-midi? right? So thats morning of the next day for me! I'm in future lalala! :)</text>
+                        <question>
+                            <text>You probably already had lunch then. Have you?</text>
+                            <answers>
+                                <answer>
+                                    <button>Yes. I already had my lunch!</button>
+                                    <text>You are my achka-pachka!</text>
+                                    <question>
+                                        <text>What did you eat?</text>
+                                        <answers>
+                                            <answer>
+                                                <button>I ate Hawaiian pizza</button>
+                                                <text>I like Hawaian pizza. So after coming back you should be able to
+                                                    make it more tasty.
+                                                </text>
+                                                <question>
+                                                    <text>Right?</text>
+                                                    <answers>
+                                                        <answer>
+                                                            <button>Yes</button>
+                                                            <text>See? The questions are so easy! And thats why close
+                                                                this app and message me something nice. :)
+                                                            </text>
+                                                        </answer>
+                                                    </answers>
+                                                </question>
+                                            </answer>
+                                            <answer>
+                                                <button>I ate cheap noodles from a pack</button>
+                                                <text>I didn't doubt you :D</text>
+                                                <question>
+                                                    <text>Was it tasty?</text>
+                                                    <answers>
+                                                        <answer>
+                                                            <button>No, because I was missing my Aygulenka</button>
+                                                            <text>See? The questions are so easy! And thats why close
+                                                                this app and message me something nice. :)
+                                                            </text>
+                                                        </answer>
+                                                    </answers>
+                                                </question>
+                                            </answer>
+                                            <answer>
+                                                <button>I ate something else</button>
+                                                <text>Hmm, ok. How was it?</text>
+                                                <question>
+                                                    <text>Was it tasty?</text>
+                                                    <answers>
+                                                        <answer>
+                                                            <button>No, because I was missing my Aygulenka</button>
+                                                            <text>See? The questions are so easy! And thats why close
+                                                                this app and message me something nice. :)
+                                                            </text>
+                                                        </answer>
+                                                    </answers>
+                                                </question>
+                                            </answer>
+                                        </answers>
+                                    </question>
+                                </answer>
+                                <answer>
+                                    <button>No, but going to.</button>
+                                    <text>Priyatnogo appetita!</text>
+                                    <question>
+                                        <text>Are you missing Aygulechka?</text>
+                                        <answers>
+                                            <answer>
+                                                <button>Yes, I'm missing my achka-pachka!</button>
+                                                <text>See? The questions are so easy! And thats why close this app and
+                                                    message me something nice. :)
+                                                </text>
+                                            </answer>
+                                        </answers>
+                                    </question>
+                                </answer>
+                            </answers>
+                        </question>
+                    </answer>
+                    <answer>
+                        <button>Evening or night</button>
+                        <text>So then most probably you are going to sleep soon and for sure missing Aygulechka?</text>
+                        <question>
+                            <text>Right?</text>
+                            <answers>
+                                <answer>
+                                    <button>Yes</button>
+                                    <text>See? The questions are so easy! And thats why close this app and message me
+                                        something nice. :)
+                                    </text>
+                                </answer>
+                            </answers>
+                        </question>
+                    </answer>
+                </answers>
+            </question>
+        </answer>
+    </answers>
+</question>
