@@ -8,15 +8,13 @@ import java.io.Serializable;
  * Created by aschworer on 29/08/2014.
  */
 public class Answer implements Serializable {
-//    @Element
 
     @SerializedName("button")
     private String button;
-//    @Element(required = false)
 
     @SerializedName("text")
     private String text;
-    //    @Element(required = false)
+
     @SerializedName("question")
     private Question question;
 
