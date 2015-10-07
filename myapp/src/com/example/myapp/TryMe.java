@@ -2,7 +2,6 @@ package com.example.myapp;
 
 import android.app.Activity;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -14,19 +13,13 @@ import com.example.myapp.model.Answer;
 import com.example.myapp.model.Question;
 import com.example.myapp.processor.RetrieveFeedTask;
 import com.example.myapp.processor.RetrieveImgTask;
-import org.simpleframework.xml.Serializer;
-import org.simpleframework.xml.core.Persister;
 
-import java.net.URL;
-
-public class TryMe extends Activity implements AsyncResponse{
+/**
+ * Trial version
+ */
+public class TryMe extends Activity implements AsyncResponse {
 
     boolean finishedImage;
-//    RetrieveFeedTask asyncTask =new RetrieveFeedTask();
-//    @Override
-//    public void onCreate(Bundle savedInstanceState) {
-//
-//    }
 
     /**
      * Called when the activity is first created.
@@ -40,11 +33,11 @@ public class TryMe extends Activity implements AsyncResponse{
 //        findViewById(R.id.pic).setVisibility(View.INVISIBLE);
 
         setContentView(R.layout.main);
-        ((ImageView)findViewById(R.id.pic)).setImageResource(0);
+        ((ImageView) findViewById(R.id.pic)).setImageResource(0);
         try {
             String url = "http://feed-xml.googlecode.com/svn/trunk/q.json";
             RetrieveFeedTask retrieveFeedTask = new RetrieveFeedTask(this);
-                    retrieveFeedTask.execute(new String[]{url});
+            retrieveFeedTask.execute(url);
         } catch (Exception e) {
             Log.e("exception", e.getMessage());
         }
@@ -55,20 +48,20 @@ public class TryMe extends Activity implements AsyncResponse{
         final TextView text = (TextView) findViewById(R.id.text);
 
 
-        if (question.getText()!=null) text.setText(text.getText() + "\n\n" + question.getText());
-        if (question.getImageURL()!=null) {
+        if (question.getText() != null) text.setText(text.getText() + "\n\n" + question.getText());
+        if (question.getImageURL() != null) {
             try {
-                finishedImage=false;
+                finishedImage = false;
                 RetrieveImgTask task = new RetrieveImgTask(this);
-                task.execute(new String[]{question.getImageURL()});
+                task.execute(question.getImageURL());
             } catch (Exception e) {
                 Log.e("error", e.getMessage());
             }
         }
 
         for (Answer answer : question.getAnswers()) {
-                    appendButton(answer);
-             }
+            appendButton(answer);
+        }
     }
 
     private void appendButton(final Answer currentAnswer) {
@@ -83,7 +76,7 @@ public class TryMe extends Activity implements AsyncResponse{
                 removeAllButtons();
                 if (currentAnswer.getQuestion() != null) {
                     showQuestion(currentAnswer.getQuestion());
-                }else {
+                } else {
                     showExitButton();
                 }
             }
@@ -97,7 +90,7 @@ public class TryMe extends Activity implements AsyncResponse{
         layout.removeAllViews();
     }
 
-    private void showButton(Button btn){
+    private void showButton(Button btn) {
         LinearLayout layout = (LinearLayout) findViewById(R.id.buttons);
 
         LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
@@ -107,7 +100,7 @@ public class TryMe extends Activity implements AsyncResponse{
 
     }
 
-    private void showExitButton(){
+    private void showExitButton() {
         Button btnExit = new Button(this);
         btnExit.setText("CLOSE");
         btnExit.setOnClickListener(new View.OnClickListener() {
@@ -130,7 +123,7 @@ public class TryMe extends Activity implements AsyncResponse{
         final ImageView imageView = (ImageView) findViewById(R.id.pic);
         imageView.setImageBitmap(output);
 //        imageView.setVisibility(View.VISIBLE);
-        finishedImage=true;
+        finishedImage = true;
 
     }
 }
